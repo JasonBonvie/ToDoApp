@@ -1,5 +1,5 @@
 // check of specific todo's by clicking 
-$("li").click(function(){
+$("ul").on("click", "li",function(){
 
 	// =====Boolean logic way to toggle click output ========
 	// 	if($(this).css("color") === "rgb(128, 128, 128)"){
@@ -22,7 +22,7 @@ $("li").click(function(){
 
 // Click on X to delete toDo
 
-$("span").click(function(event){
+$("ul").on("click", "span", function(event){
 
 	$(this).parent().fadeOut(500, function(){
 		$(this).remove();
@@ -30,3 +30,14 @@ $("span").click(function(event){
 	event.stopPropagation();
 
 });
+
+$("input[type='text'] ").keypress(function(event){
+	if(event.which === 13){
+		 var todoText = $(this).val();
+		 $(this).val("");
+
+		 // create a new li and append 
+
+		 $("ul").append('<li><span>X </span>' +  todoText + "</li>");
+	}
+})
