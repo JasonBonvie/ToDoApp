@@ -12,19 +12,42 @@ ul{
 	margin: 0;
 	padding: 0;
 }
-
+html{
+	height: 100%;
+}
 body{
 	font-family: roboto;
+	height: 12%;
+    margin: 0;
+    background-repeat: no-repeat;
+	background: linear-gradient( #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 li{
 	background: #FFFF;
+	line-height: 40px;
+	color: #666;
 }
 
 li:nth-child(2n){
 	background: #F7F7F7; 
 }
+input{
+	font-size: 18px;
+	color: red;
+	background: #F7F7F7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+}
+
+input:foucs{
+	background: #FFF;
+	border: 0px solid #DDA0DD;
+	outline: none;
+}
+
 #container {
 	
 	width: 360px;
