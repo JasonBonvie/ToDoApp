@@ -1,9 +1,14 @@
 h1{
+	border-top-left-radius: 60% 20%;
+    border-top-right-radius: 60% 20%;
+	border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
 	background: #FF1493;
+	color: white;
 	margin: 0;
-	padding: 10px, 20px;
+	padding: 10px 20px;
 	text-transform: uppercase;
-	font-size: 24px; 
+	font-size: 24px;
 	font-weight: normal;
 }
 
@@ -16,12 +21,17 @@ html{
 	height: 100%;
 }
 body{
+
 	font-family: roboto;
 	height: 12%;
     margin: 0;
     background-repeat: no-repeat;
 	background: linear-gradient( #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
+
+.fa-arrow-alt-circle-down{
+	float: right;
 }
 
 li{
@@ -33,13 +43,32 @@ li{
 li:nth-child(2n){
 	background: #F7F7F7; 
 }
+
+span{
+	width: 0;
+	background: #5c77d1;
+	height: 40px;
+	color: white;
+	margin-right: 20px;
+	text-align: center;
+	display: inline-block;
+	transition: 0.4s linear;
+	opacity: 0;
+
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0; 
+}
 input{
 	font-size: 18px;
-	color: red;
+	color: #2980b9;
 	background: #F7F7F7;
 	width: 100%;
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
 }
 
 input:foucs{
@@ -49,7 +78,8 @@ input:foucs{
 }
 
 #container {
-	
+	border-top-left-radius: 50% 7%;
+    border-top-right-radius: 50% 7%;
 	width: 360px;
 	margin: 100px auto;
 	background: #F7F7F7; 
