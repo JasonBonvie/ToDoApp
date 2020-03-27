@@ -1,8 +1,7 @@
 h1{
 	border-top-left-radius: 60% 20%;
     border-top-right-radius: 60% 20%;
-	border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
+	
 	background: #FF1493;
 	color: white;
 	margin: 0;
@@ -78,8 +77,8 @@ input:foucs{
 }
 
 #container {
-	border-top-left-radius: 50% 7%;
-    border-top-right-radius: 50% 7%;
+	border-top-left-radius: 50% 17%;
+    border-top-right-radius: 50% 17%;
 	width: 360px;
 	margin: 100px auto;
 	background: #F7F7F7; 
